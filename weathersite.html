@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherSite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">WeatherSite</a>
+                <img src="kodeinkgp.png" height="50" width="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-section">
+        <input type="text" id="cityInput" placeholder="Which city's weather do you wish to see?">
+        <button id="searchBtn">Search</button>
+        <div id="errorMessage" class="error"></div>
+    </div>
+
+    <section id="weather">
+        <h2>Weather Details</h2>
+        <div id="weatherData">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This website displays all the weather information of the entered city.</p>
+        <p>Enter any of the following city names</p>
+        <p>Bengaluru    Delhi    Kolkata    Delhi    Chennai</p>
+        <p>It shows the temparature, date, wind speed, humidity and pressure</p>
+        <p> </p>
+        <p>KodeinKGP</p>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright: KodeinKGP WeatherSite</p>
+        <ul clas="link_lists">
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <button id="backToTop">Back to Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

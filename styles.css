@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #6AC1DE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+section {
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #777375;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .logo {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar .hamburger {
+    display: none;
+    cursor: pointer;
+}
+.navbar .hamburger span {
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+.search-section {
+    text-align: center;
+    margin-top: 160px;
+}
+#cityInput {
+    background-color: #80D5DC;
+    padding: 10px;
+    width: 60%;
+    margin: 10px;
+}
+#searchBtn {
+    padding: 10px 15px;
+    background-color: #777375;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#searchBtn:hover {
+    background-color: #AFA69F;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+#weather {
+    text-align: center;
+    margin-top: 40px;
+}
+#weather h2 {
+    margin-bottom: 20px;
+}
+
+#about {
+    background-color: #80D5DC;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+#about img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #777375;
+    line-height: 40px;
+    color: white;
+    text-align: left;
+    padding: 180px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 40px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+#backToTop {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+#backToTop:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar .hamburger {
+        display: block;
+    }
+    .navbar.active .nav-links {
+        display: flex;
+    }
+    #cityInput {
+        width: 80%;
+    }
+}
